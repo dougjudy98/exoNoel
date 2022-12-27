@@ -7,26 +7,20 @@
     <title>Création personne et compte bancaire</title>
 </head>
 <body>
+
+<form action="./compte.php" method="POST">
+
+    <input type="text" name="nom" id="nom" placeholder="Saisir votre nom" required>
+    <input type="text" name="age" id="age" placeholder="Saisir votre age" required>
+    <input type="text" name="solde" id="solde" placeholder="Saisir le solde" required>
+
+    <input type="submit" value="Valider">
+
+</form>
+
     
 </body>
 </html>
 
-<?php
-
-// include "./Personne.php";
-// include "./CompteBancaire.php";
-
-// $mariana = new Personne('mariana', 24);
-// echo $mariana->sePresenter();
-
-// $moncompte = new CompteBancaire();
-// echo $moncompte->solde;
-// $moncompte->deposer(1000);
-// echo $moncompte->solde;
-// $moncompte->retirer(100);
-// echo $moncompte->solde;
 
 
-
-
-?>
