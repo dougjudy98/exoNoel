@@ -5,9 +5,10 @@ class Personne{
     public $age;
     public $compteBancaire;
 
-    public function __construct(string $nom, int $age){
+    public function __construct(string $nom, int $age, CompteBancaire $compte){
         $this->nom = ucfirst($nom);
         $this->age = $age;
+        $this->compteBancaire = $compte;
     }
 
     public function sePresenter(){
@@ -16,6 +17,30 @@ class Personne{
 
     public function afficherInfos(){
         return " Nom : {$this->nom} <br> Age : {$this->age} <br> Solde : {$this->compteBancaire->solde}";
+    }
+
+    public function getNom() : string{
+        return $this->nom;
+    }
+
+    public function setNom(string $value) : string{
+        return $this->nom = $value;
+    }
+
+    public function getAge() : int{
+        return $this->age;
+    }
+
+    public function setAge(int $value) : int{
+        return $this->age = $value;
+    }
+
+    public function getCompteBancaire() : CompteBancaire {
+        return $this->compteBancaire;
+    }
+
+    public function setCompteBancaire(CompteBancaire $compte) : CompteBancaire {
+        return $this->compteBancaire = $compte;
     }
 }
 

@@ -9,6 +9,8 @@
 </head>
 <body>
 
+
+
 <!-- Prérequis pour accomplir le challenge:
 
     1) Écrivez une classe "Personne" qui a des propriétés "nom" et "âge" et qui a une méthode "sePrésenter" qui renvoie une chaîne de caractères de la forme "Bonjour, je m'appelle [nom] et j'ai [âge] ans."
@@ -27,16 +29,37 @@
 
     --- Bonus ---
 
-    1) Ajouter une méthode "virement" à la classe "CompteBancaire" qui permet de transférer de l'argent d'un compte à un autre.
-    2) Ajouter une méthode "getSolde" à la classe "CompteBancaire" qui permet de récupérer le solde du compte.
-    3) Ajouter une méthode "getNom" à la classe "Personne" qui permet de récupérer le nom de la personne.
-    4) Ajouter une méthode "getAge" à la classe "Personne" qui permet de récupérer l'âge de la personne.
-    5) Ajouter une méthode "getCompteBancaire" à la classe "Personne" qui permet de récupérer l'instance de la classe "CompteBancaire".
-    6) Ajouter une méthode "setCompteBancaire" à la classe "Personne" qui permet de définir l'instance de la classe "CompteBancaire".
-    7) Ajouter une méthode "setNom" à la classe "Personne" qui permet de définir le nom de la personne.
-    8) Ajouter une méthode "setAge" à la classe "Personne" qui permet de définir l'âge de la personne.
-    9) Ajouter une méthode "setSolde" à la classe "CompteBancaire" qui permet de définir le solde du compte.
+        1) Ajouter une méthode "virement" à la classe "CompteBancaire" qui permet de transférer de l'argent d'un compte à un autre.
+        2) Ajouter une méthode "getSolde" à la classe "CompteBancaire" qui permet de récupérer le solde du compte.
+        3) Ajouter une méthode "getNom" à la classe "Personne" qui permet de récupérer le nom de la personne.
+        4) Ajouter une méthode "getAge" à la classe "Personne" qui permet de récupérer l'âge de la personne.
+        5) Ajouter une méthode "getCompteBancaire" à la classe "Personne" qui permet de récupérer l'instance de la classe "CompteBancaire".
+        6) Ajouter une méthode "setCompteBancaire" à la classe "Personne" qui permet de définir l'instance de la classe "CompteBancaire".
+        7) Ajouter une méthode "setNom" à la classe "Personne" qui permet de définir le nom de la personne.
+        8) Ajouter une méthode "setAge" à la classe "Personne" qui permet de définir l'âge de la personne.
+        9) Ajouter une méthode "setSolde" à la classe "CompteBancaire" qui permet de définir le solde du compte.
 
+
+
+-->
+
+<?php
+    include "./Personne.php";
+    include "./CompteBancaire.php";
+
+    // Bonus
+
+    
+
+
+
+?>
+
+
+
+
+
+<!--
     --- Super bonus --- // Si vous avez fini les bonus, vous pouvez essayer de faire les super bonus.
 
     10) Créer une classe "Banque" qui contient une propriété "personnes" qui est un tableau d'instances de la classe "Personne".

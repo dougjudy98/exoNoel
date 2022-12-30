@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<?php 
+    include "./Personne.php";
+    include "./CompteBancaire.php";
+?>
+
 <form action="./compte.php" method="POST">
 
     <input type="text" name="nom" id="nom" placeholder="Saisir votre nom" required>
@@ -17,6 +22,8 @@
     <input type="submit" value="Valider">
 
 </form>
+
+
 
     
 </body>
