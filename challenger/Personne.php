@@ -35,11 +35,12 @@ class Personne{
         return $this->age = $value;
     }
 
-    public function getCompteBancaire() : CompteBancaire {
+    public function getCompteBancaire() {
         return $this->compteBancaire;
     }
 
-    public function setCompteBancaire(CompteBancaire $compte) : CompteBancaire {
+    public function setCompteBancaire($montant) : CompteBancaire {
+        $compte = new CompteBancaire($montant);
         return $this->compteBancaire = $compte;
     }
 }

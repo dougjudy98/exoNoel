@@ -29,15 +29,15 @@
 
     --- Bonus ---
 
-        1) Ajouter une méthode "virement" à la classe "CompteBancaire" qui permet de transférer de l'argent d'un compte à un autre.
-        2) Ajouter une méthode "getSolde" à la classe "CompteBancaire" qui permet de récupérer le solde du compte.
-        3) Ajouter une méthode "getNom" à la classe "Personne" qui permet de récupérer le nom de la personne.
-        4) Ajouter une méthode "getAge" à la classe "Personne" qui permet de récupérer l'âge de la personne.
-        5) Ajouter une méthode "getCompteBancaire" à la classe "Personne" qui permet de récupérer l'instance de la classe "CompteBancaire".
-        6) Ajouter une méthode "setCompteBancaire" à la classe "Personne" qui permet de définir l'instance de la classe "CompteBancaire".
-        7) Ajouter une méthode "setNom" à la classe "Personne" qui permet de définir le nom de la personne.
-        8) Ajouter une méthode "setAge" à la classe "Personne" qui permet de définir l'âge de la personne.
-        9) Ajouter une méthode "setSolde" à la classe "CompteBancaire" qui permet de définir le solde du compte.
+            1) Ajouter une méthode "virement" à la classe "CompteBancaire" qui permet de transférer de l'argent d'un compte à un autre.
+            2) Ajouter une méthode "getSolde" à la classe "CompteBancaire" qui permet de récupérer le solde du compte.
+            3) Ajouter une méthode "getNom" à la classe "Personne" qui permet de récupérer le nom de la personne.
+            4) Ajouter une méthode "getAge" à la classe "Personne" qui permet de récupérer l'âge de la personne.
+            5) Ajouter une méthode "getCompteBancaire" à la classe "Personne" qui permet de récupérer l'instance de la classe "CompteBancaire".
+            6) Ajouter une méthode "setCompteBancaire" à la classe "Personne" qui permet de définir l'instance de la classe "CompteBancaire".
+            7) Ajouter une méthode "setNom" à la classe "Personne" qui permet de définir le nom de la personne.
+            8) Ajouter une méthode "setAge" à la classe "Personne" qui permet de définir l'âge de la personne.
+            9) Ajouter une méthode "setSolde" à la classe "CompteBancaire" qui permet de définir le solde du compte.
 
 
 
@@ -49,7 +49,47 @@
 
     // Bonus
 
-    
+    $client = new Personne('Luka', 25, new CompteBancaire(1000));
+
+    echo $client->afficherInfos();
+
+    echo '<br>';
+    echo $client->getNom();
+    echo $client->getAge();
+    var_dump($client->getCompteBancaire()); 
+
+    // echo $client->compteBancaire->getSolde();
+
+    $client2 = new Personne('Mariana', 24, new CompteBancaire(2000));
+
+    echo $client2->compteBancaire->getSolde();
+
+    echo '<br>';
+    echo 'Client : '.$client->compteBancaire->getSolde();
+    echo 'Client 2 : '.$client2->compteBancaire->getSolde();
+
+    $client2->compteBancaire->virement($client->compteBancaire, 500);
+
+    echo '<br>';
+    echo 'Client : '.$client->compteBancaire->getSolde();
+    echo 'Client 2 : '.$client2->compteBancaire->getSolde();
+
+    echo '<br>';
+    $client3 = new Personne('Test', 22, new CompteBancaire(100));
+
+    echo '<br> Client 3 : <br>'.$client3->afficherInfos();
+
+    $client3->setNom('Melina');
+    $client3->setAge(20);
+    $client3->setCompteBancaire(1000);
+    echo '<br> Client 3 après Sets : <br>'.$client3->afficherInfos();
+
+    $client3->compteBancaire->setSolde(500);
+    echo '<br> Client 3 après setSolde <br>'.$client3->compteBancaire->getSolde();
+
+
+
+
 
 
 
