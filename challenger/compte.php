@@ -68,5 +68,3 @@ echo $_SESSION['client']->afficherInfos();
     
 </body>
 </html>
-
-<!-- TU ES LINDA  -->

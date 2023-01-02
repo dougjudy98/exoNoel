@@ -43,55 +43,50 @@
 
 -->
 
+
 <?php
-    include "./Personne.php";
-    include "./CompteBancaire.php";
+    // include "./Personne.php";
+    // include "./CompteBancaire.php";
 
-    // Bonus
+    // // Bonus
 
-    $client = new Personne('Luka', 25, new CompteBancaire(1000));
+    // $client = new Personne('Luka', 25, new CompteBancaire(1000));
 
-    echo $client->afficherInfos();
+    // echo $client->afficherInfos();
 
-    echo '<br>';
-    echo $client->getNom();
-    echo $client->getAge();
-    var_dump($client->getCompteBancaire()); 
+    // echo '<br>';
+    // echo $client->getNom();
+    // echo $client->getAge();
+    // var_dump($client->getCompteBancaire()); 
 
-    // echo $client->compteBancaire->getSolde();
+    // // echo $client->compteBancaire->getSolde();
 
-    $client2 = new Personne('Mariana', 24, new CompteBancaire(2000));
+    // $client2 = new Personne('Mariana', 24, new CompteBancaire(2000));
 
-    echo $client2->compteBancaire->getSolde();
+    // echo $client2->compteBancaire->getSolde();
 
-    echo '<br>';
-    echo 'Client : '.$client->compteBancaire->getSolde();
-    echo 'Client 2 : '.$client2->compteBancaire->getSolde();
+    // echo '<br>';
+    // echo 'Client : '.$client->compteBancaire->getSolde();
+    // echo 'Client 2 : '.$client2->compteBancaire->getSolde();
 
-    $client2->compteBancaire->virement($client->compteBancaire, 500);
+    // $client2->compteBancaire->virement($client->compteBancaire, 500);
 
-    echo '<br>';
-    echo 'Client : '.$client->compteBancaire->getSolde();
-    echo 'Client 2 : '.$client2->compteBancaire->getSolde();
+    // echo '<br>';
+    // echo 'Client : '.$client->compteBancaire->getSolde();
+    // echo 'Client 2 : '.$client2->compteBancaire->getSolde();
 
-    echo '<br>';
-    $client3 = new Personne('Test', 22, new CompteBancaire(100));
+    // echo '<br>';
+    // $client3 = new Personne('Test', 22, new CompteBancaire(100));
 
-    echo '<br> Client 3 : <br>'.$client3->afficherInfos();
+    // echo '<br> Client 3 : <br>'.$client3->afficherInfos();
 
-    $client3->setNom('Melina');
-    $client3->setAge(20);
-    $client3->setCompteBancaire(1000);
-    echo '<br> Client 3 après Sets : <br>'.$client3->afficherInfos();
+    // $client3->setNom('Melina');
+    // $client3->setAge(20);
+    // $client3->setCompteBancaire(1000);
+    // echo '<br> Client 3 après Sets : <br>'.$client3->afficherInfos();
 
-    $client3->compteBancaire->setSolde(500);
-    echo '<br> Client 3 après setSolde <br>'.$client3->compteBancaire->getSolde();
-
-
-
-
-
-
+    // $client3->compteBancaire->setSolde(500);
+    // echo '<br> Client 3 après setSolde <br>'.$client3->compteBancaire->getSolde();
 
 ?>
 
